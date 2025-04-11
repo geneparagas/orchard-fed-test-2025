@@ -8,6 +8,7 @@ const CookingSection = ({ data, onImageClick, onAnchorClick }) => (
           <img
             src={img.src}
             alt={img.alt}
+            onClick={() => onImageClick(img.src)}
             className="clickable"
           />
         </div>
